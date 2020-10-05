@@ -11,3 +11,16 @@ C:\Users\Cristian\Desktop\C#\Entidades\CalculadoraForms\obj\Debug\CalculadoraFor
 C:\Users\Cristian\Desktop\C#\Entidades\CalculadoraForms\obj\Debug\CalculadoraForms.csproj.CopyComplete
 C:\Users\Cristian\Desktop\C#\Entidades\CalculadoraForms\obj\Debug\CalculadoraForms.exe
 C:\Users\Cristian\Desktop\C#\Entidades\CalculadoraForms\obj\Debug\CalculadoraForms.pdb
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\bin\Debug\CalculadoraForms.exe.config
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\bin\Debug\CalculadoraForms.exe
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\bin\Debug\CalculadoraForms.pdb
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\bin\Debug\Entidades.dll
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\bin\Debug\Entidades.pdb
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\obj\Debug\CalculadoraForms.csprojAssemblyReference.cache
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\obj\Debug\CalculadoraForms.Form1.resources
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\obj\Debug\CalculadoraForms.Properties.Resources.resources
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\obj\Debug\CalculadoraForms.csproj.GenerateResource.cache
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\obj\Debug\CalculadoraForms.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\obj\Debug\CalculadoraForms.csproj.CopyComplete
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\obj\Debug\CalculadoraForms.exe
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\CalculadoraForms\obj\Debug\CalculadoraForms.pdb

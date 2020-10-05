@@ -4,3 +4,9 @@ C:\Users\Cristian\Desktop\C#\Entidades\Entidades\obj\Debug\Entidades.csprojAssem
 C:\Users\Cristian\Desktop\C#\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Cristian\Desktop\C#\Entidades\Entidades\obj\Debug\Entidades.dll
 C:\Users\Cristian\Desktop\C#\Entidades\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\Entidades\bin\Debug\Entidades.dll
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\Entidades\obj\Debug\Entidades.dll
+C:\Users\Cristian\Desktop\UTN\TP1 - CALCULADORA\Entidades\obj\Debug\Entidades.pdb
