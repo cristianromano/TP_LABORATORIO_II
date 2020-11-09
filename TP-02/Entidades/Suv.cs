@@ -10,7 +10,7 @@ namespace Entidades
     {
 
 
-        public Suv(string chasis, EMarca marca, ConsoleColor color):base(chasis, marca, color )
+        public Suv( EMarca marca, string chasis , ConsoleColor color):base( marca, chasis, color )
         {
   
 
@@ -34,7 +34,7 @@ namespace Entidades
 
             sb.AppendLine("SUV");
             sb.AppendLine(base.Mostrar());
-            sb.AppendLine($"TAMAÑO : {ETamanio.Grande}");
+            sb.AppendLine($"TAMAÑO : {this.Tamanio}");
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 

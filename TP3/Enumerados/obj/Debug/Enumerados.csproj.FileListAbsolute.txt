@@ -1,0 +1,6 @@
+C:\Users\Cristian\source\repos\ClaseAbstracta\Enumerados\bin\Debug\Enumerados.dll
+C:\Users\Cristian\source\repos\ClaseAbstracta\Enumerados\bin\Debug\Enumerados.pdb
+C:\Users\Cristian\source\repos\ClaseAbstracta\Enumerados\obj\Debug\Enumerados.csprojAssemblyReference.cache
+C:\Users\Cristian\source\repos\ClaseAbstracta\Enumerados\obj\Debug\Enumerados.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\source\repos\ClaseAbstracta\Enumerados\obj\Debug\Enumerados.dll
+C:\Users\Cristian\source\repos\ClaseAbstracta\Enumerados\obj\Debug\Enumerados.pdb

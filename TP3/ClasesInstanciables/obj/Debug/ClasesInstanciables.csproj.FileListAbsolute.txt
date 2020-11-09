@@ -1,0 +1,13 @@
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\bin\Debug\ClasesInstanciables.dll
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\bin\Debug\ClasesInstanciables.pdb
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\bin\Debug\Archivos.dll
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\bin\Debug\ClaseAbstracta.dll
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\bin\Debug\Excepciones.dll
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\bin\Debug\Archivos.pdb
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\bin\Debug\ClaseAbstracta.pdb
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\bin\Debug\Excepciones.pdb
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\obj\Debug\ClasesInstanciables.csprojAssemblyReference.cache
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\obj\Debug\ClasesInstanciables.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\obj\Debug\ClasesInstanciables.csproj.CopyComplete
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\obj\Debug\ClasesInstanciables.dll
+C:\Users\Cristian\source\repos\ClaseAbstracta\ClasesInstanciables\obj\Debug\ClasesInstanciables.pdb

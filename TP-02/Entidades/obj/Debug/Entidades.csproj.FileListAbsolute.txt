@@ -17,3 +17,9 @@ C:\Users\Cristian\Desktop\TP-02\Entidades\obj\Debug\Entidades.csprojAssemblyRefe
 C:\Users\Cristian\Desktop\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Cristian\Desktop\TP-02\Entidades\obj\Debug\Entidades.dll
 C:\Users\Cristian\Desktop\TP-02\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Cristian\Desktop\UTN\TP-02\Entidades\bin\Debug\Entidades.dll
+C:\Users\Cristian\Desktop\UTN\TP-02\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Cristian\Desktop\UTN\TP-02\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Cristian\Desktop\UTN\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\Desktop\UTN\TP-02\Entidades\obj\Debug\Entidades.dll
+C:\Users\Cristian\Desktop\UTN\TP-02\Entidades\obj\Debug\Entidades.pdb

@@ -6,16 +6,6 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public enum EMarca
-    {
-        Chevrolet, Ford, Renault, Toyota, BMW, Honda, HarleyDavidson
-    }
-
-    public enum ETamanio
-    {
-        Chico, Mediano, Grande
-    }
-
 
 
     /// <summary>
@@ -23,13 +13,22 @@ namespace Entidades
     /// </summary>
     public abstract class Vehiculo
     {
+        public enum EMarca
+        {
+            Chevrolet, Ford, Renault, Toyota, BMW, Honda, HarleyDavidson
+        }
+
+        public enum ETamanio
+        {
+            Chico, Mediano, Grande
+        }
 
         EMarca marca;
         protected string chasis;
         ConsoleColor color;
         
 
-        protected Vehiculo(string chasis, EMarca marca, ConsoleColor color)
+        public Vehiculo(EMarca marca, string chasis, ConsoleColor color)
         {
             this.marca = marca;
             this.chasis = chasis;
@@ -52,20 +51,20 @@ namespace Entidades
         /// <returns></returns>
         public virtual string Mostrar()
         {
-            return (string)this;
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine($"CHASIS: {this.chasis}");
+            sb.AppendLine($"MARCA: {this.marca.ToString()}");
+            sb.AppendLine($"COLOR: {this.color.ToString()}");
+            sb.AppendLine("---------------------");
+
+            return sb.ToString();
         }
 
 
         public static explicit operator string(Vehiculo p)
         {
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine($"CHASIS: {p.chasis}\r\n");
-            sb.AppendLine($"MARCA : {p.marca.ToString()}\r\n");
-            sb.AppendLine($"COLOR : { p.color.ToString()}\r\n");
-            sb.AppendLine("---------------------");
-
-            return sb.ToString();
+            return p.Mostrar();
         }
 
         /// <summary>

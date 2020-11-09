@@ -15,7 +15,10 @@ namespace Entidades
     {
         public enum ETipo
         {
-            Moto, Automovil, Camioneta, Todos
+            Ciclomotor,
+            Sedan,
+            SUV,
+            Todos
         }
 
         List<Vehiculo> vehiculos;
@@ -24,7 +27,7 @@ namespace Entidades
 
 
         #region "Constructores"
-        public Taller()
+        private Taller()
         {
             this.vehiculos = new List<Vehiculo>();
         }
@@ -64,20 +67,20 @@ namespace Entidades
             {
                 switch (tipo)
                 {
-                    case ETipo.Camioneta:
+                    case ETipo.SUV:
                         if(v is Suv)
                         {
                             sb.AppendLine(v.Mostrar());
                             
                         }
                         break;
-                    case ETipo.Moto:
+                    case ETipo.Ciclomotor:
                         if(v is Ciclomotor)
                         {
                             sb.AppendLine(v.Mostrar());
                         }                     
                         break;
-                    case ETipo.Automovil:
+                    case ETipo.Sedan:
                         if(v is Sedan)
                         {
                             sb.AppendLine(v.Mostrar());
@@ -105,14 +108,15 @@ namespace Entidades
             foreach (Vehiculo v in taller.vehiculos)
             {
                 if (v == vehiculo)
-                    return taller;
+                {                   
+                    return taller; 
+                }      
             }
 
-            if(taller.espacioDisponible >taller.vehiculos.Count)
+            if (taller.espacioDisponible > taller.vehiculos.Count)
             {
                 taller.vehiculos.Add(vehiculo);
             }
-            
             return taller;
         }
         /// <summary>
