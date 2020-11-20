@@ -4,3 +4,9 @@ C:\Users\Cristian\source\repos\TP4\Excepciones\obj\Debug\Excepciones.csprojAssem
 C:\Users\Cristian\source\repos\TP4\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
 C:\Users\Cristian\source\repos\TP4\Excepciones\obj\Debug\Excepciones.dll
 C:\Users\Cristian\source\repos\TP4\Excepciones\obj\Debug\Excepciones.pdb
+C:\Users\Cristian\Desktop\TP4\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\Cristian\Desktop\TP4\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\Cristian\Desktop\TP4\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
+C:\Users\Cristian\Desktop\TP4\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\Desktop\TP4\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\Cristian\Desktop\TP4\Excepciones\obj\Debug\Excepciones.pdb

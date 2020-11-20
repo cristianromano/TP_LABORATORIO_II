@@ -1,0 +1,6 @@
+C:\Users\Cristian\source\repos\Parcial1Lab\Parcial1Lab\bin\Debug\Parcial1Lab.dll
+C:\Users\Cristian\source\repos\Parcial1Lab\Parcial1Lab\bin\Debug\Parcial1Lab.pdb
+C:\Users\Cristian\source\repos\Parcial1Lab\Parcial1Lab\obj\Debug\Parcial1Lab.csprojAssemblyReference.cache
+C:\Users\Cristian\source\repos\Parcial1Lab\Parcial1Lab\obj\Debug\Parcial1Lab.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\source\repos\Parcial1Lab\Parcial1Lab\obj\Debug\Parcial1Lab.dll
+C:\Users\Cristian\source\repos\Parcial1Lab\Parcial1Lab\obj\Debug\Parcial1Lab.pdb

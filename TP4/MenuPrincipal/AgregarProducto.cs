@@ -37,12 +37,12 @@ namespace MenuPrincipal
             {
                 float precio = float.Parse(this.txtPrecio.Text);
                 int stock = int.Parse(this.txtStock.Text);
-                int id = int.Parse(this.txtID.Text);
+              //  int id = int.Parse(this.txtID.Text);
 
                 if (string.IsNullOrWhiteSpace(this.txtNombre.Text) == false && string.IsNullOrWhiteSpace(this.txtCodigo.Text) == false)
                 {
 
-                    producto = new Producto(this.txtNombre.Text, precio, stock, this.txtCodigo.Text , id );
+                    producto = new Producto(this.txtNombre.Text, precio, stock, this.txtCodigo.Text);
 
                     if (Comercio.Productos + producto)
                     {
@@ -116,6 +116,8 @@ namespace MenuPrincipal
             this.txtPrecio.Enabled = false;
             this.txtID.Text = dtgProductos.CurrentRow.Cells[0].Value.ToString();
             this.txtID.Enabled = false;
+            this.txtStock.Text = dtgProductos.CurrentRow.Cells[3].Value.ToString();
+            this.txtStock.Enabled = false;
         }
         private void RefrescarDataGrid()
         {

@@ -98,13 +98,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Desktop\SE\ParcialLabII-2D\Parcial1LabII-Cristian Romano 2D\Entidades\Entidades.csproj">
-      <Project>{c19e3a83-b4e0-4aec-9312-6dfad9775112}</Project>
-      <Name>Entidades</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Desktop\UTN\TP3\Archivos\Archivos.csproj">
+    <ProjectReference Include="..\Archivos\Archivos.csproj">
       <Project>{608e4eb7-9fbb-4d01-8f7a-debe2e4caaa3}</Project>
       <Name>Archivos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{c19e3a83-b4e0-4aec-9312-6dfad9775112}</Project>
+      <Name>Entidades</Name>
     </ProjectReference>
     <ProjectReference Include="..\Excepciones\Excepciones.csproj">
       <Project>{4fd67376-12c8-49fb-87ed-c5192769d278}</Project>
