@@ -108,6 +108,12 @@ namespace Main
             }
 
             Console.ReadKey();
+
+            Universidad.Leer();
+
+            Console.ReadKey();
+
         }
+
     }
 }

@@ -9,3 +9,14 @@ C:\Users\Cristian\source\repos\ClaseAbstracta\Archivos\obj\Debug\Archivos.csproj
 C:\Users\Cristian\source\repos\ClaseAbstracta\Archivos\obj\Debug\Archivos.csproj.CopyComplete
 C:\Users\Cristian\source\repos\ClaseAbstracta\Archivos\obj\Debug\Archivos.dll
 C:\Users\Cristian\source\repos\ClaseAbstracta\Archivos\obj\Debug\Archivos.pdb
+C:\Users\Cristian\Desktop\UTN\TP3\Archivos\bin\Debug\Archivos.dll
+C:\Users\Cristian\Desktop\UTN\TP3\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Cristian\Desktop\UTN\TP3\Archivos\bin\Debug\ClaseAbstracta.dll
+C:\Users\Cristian\Desktop\UTN\TP3\Archivos\bin\Debug\Excepciones.dll
+C:\Users\Cristian\Desktop\UTN\TP3\Archivos\bin\Debug\ClaseAbstracta.pdb
+C:\Users\Cristian\Desktop\UTN\TP3\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\Cristian\Desktop\UTN\TP3\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Cristian\Desktop\UTN\TP3\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\Desktop\UTN\TP3\Archivos\obj\Debug\Archivos.csproj.CopyComplete
+C:\Users\Cristian\Desktop\UTN\TP3\Archivos\obj\Debug\Archivos.dll
+C:\Users\Cristian\Desktop\UTN\TP3\Archivos\obj\Debug\Archivos.pdb
