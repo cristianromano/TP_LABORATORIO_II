@@ -9,7 +9,7 @@ using Archivos;
 
 namespace Entidades
 {
-    public class Producto
+    public sealed class Producto
     {
         int id;
         string nombre;
@@ -182,6 +182,19 @@ namespace Entidades
             }
 
             return retorno;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine($"NOMBRE: {Nombre} ");
+            sb.AppendLine($"CODIGO: {Codigo} ");
+            sb.AppendLine($"PRECIO: {Precio} ");
+            sb.AppendLine($"STOCK AGREGADO: {Stock} ");
+            sb.AppendLine($"ID: {Id} ");
+
+            return sb.ToString();
         }
 
     }

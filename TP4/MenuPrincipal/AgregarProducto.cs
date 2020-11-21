@@ -13,7 +13,7 @@ using Excepciones;
 
 namespace MenuPrincipal
 {
-    public delegate void AgregarProductosRandom(List<Producto> auxProductos);
+    public delegate void AgregarProductosRandom(Producto p);
     public partial class AgregarProducto : Form
     {
         public event AgregarProductosRandom Agregar;
@@ -29,6 +29,7 @@ namespace MenuPrincipal
         private void AgregarProducto_Load(object sender, EventArgs e)
         {
             RefrescarDataGrid();
+            this.btnEliminar.Enabled = false;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -118,6 +119,8 @@ namespace MenuPrincipal
             this.txtID.Enabled = false;
             this.txtStock.Text = dtgProductos.CurrentRow.Cells[3].Value.ToString();
             this.txtStock.Enabled = false;
+            this.btnEliminar.Enabled = true;
+            this.btnAgregar.Enabled = false;
         }
         private void RefrescarDataGrid()
         {
@@ -148,7 +151,7 @@ namespace MenuPrincipal
                 float acumulador = 0;
                 int productoIndex = 0;
                 List<Producto> auxProductos = new List<Producto>();
-                List<Producto> ListaRandom = new List<Producto>();
+                Queue<Producto> ListaRandom = new Queue<Producto>();
 
                 auxProductos = Comercio.Productos;
                 cantidadProductos = auxProductos.Count;
@@ -163,13 +166,12 @@ namespace MenuPrincipal
                     if (Comercio.Productos + auxProductos[productoIndex])
                     {
                         acumulador += auxProductos[productoIndex].Precio;
-                        ListaRandom.Add(auxProductos[productoIndex]);
+                        ListaRandom.Enqueue(auxProductos[productoIndex]);
                     }
 
+                    Thread.Sleep(3000);
+                    Agregar.Invoke(ListaRandom.Dequeue());
                 }
-
-                Thread.Sleep(3000);
-                Agregar.Invoke(ListaRandom);
             }
          
             //Venta reposicionStock = new Venta(acumulador, ListaRandom);

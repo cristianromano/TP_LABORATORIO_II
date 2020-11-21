@@ -7,12 +7,20 @@ using Archivos;
 
 namespace Entidades
 {
+    public enum EMedioPago
+    {
+        Tarjeta,
+        Efectivo,
+        Fiado
+    }
     public sealed class Venta
-    {       
+    {   
+
         float monto;
         int TicketVentaNumero;
         static int auto = 9814;
         List<Producto> productos;
+        EMedioPago pago;
 
         public Venta(float monto , List<Producto> productos)
         {
@@ -21,10 +29,17 @@ namespace Entidades
             this.Productos = productos;
             productos = new List<Producto>();
         }
+
+        public Venta(float monto, List<Producto> productos , EMedioPago pago):this(monto , productos)
+        {
+            this.Pago = pago;
+        }
+
         
         public List<Producto> Productos { get => productos; set => productos = value; }
         public float Monto { get => monto; set => monto = value; }
         public int Ticket { get => TicketVentaNumero; set => TicketVentaNumero = value; }
+        private EMedioPago Pago { get => pago; set => pago = value; }
 
         /// <summary>
         /// agrega una nueva venta a la lista

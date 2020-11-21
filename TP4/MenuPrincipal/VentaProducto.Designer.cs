@@ -40,6 +40,8 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtTicket = new System.Windows.Forms.TextBox();
             this.lbTicketNumero = new System.Windows.Forms.Label();
+            this.cmbMedioPago = new System.Windows.Forms.ComboBox();
+            this.lbMedioPago = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVentaProducto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +63,7 @@
             // 
             // txtMontoFinal
             // 
-            this.txtMontoFinal.Location = new System.Drawing.Point(101, 338);
+            this.txtMontoFinal.Location = new System.Drawing.Point(343, 254);
             this.txtMontoFinal.Name = "txtMontoFinal";
             this.txtMontoFinal.ReadOnly = true;
             this.txtMontoFinal.Size = new System.Drawing.Size(100, 20);
@@ -95,7 +97,7 @@
             // lbMonto
             // 
             this.lbMonto.AutoSize = true;
-            this.lbMonto.Location = new System.Drawing.Point(33, 341);
+            this.lbMonto.Location = new System.Drawing.Point(271, 257);
             this.lbMonto.Name = "lbMonto";
             this.lbMonto.Size = new System.Drawing.Size(62, 13);
             this.lbMonto.TabIndex = 8;
@@ -122,7 +124,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(357, 335);
+            this.btnAceptar.Location = new System.Drawing.Point(343, 338);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 12;
@@ -132,7 +134,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(225, 335);
+            this.btnAgregar.Location = new System.Drawing.Point(101, 338);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 13;
@@ -142,26 +144,46 @@
             // 
             // txtTicket
             // 
-            this.txtTicket.Location = new System.Drawing.Point(383, 260);
+            this.txtTicket.Location = new System.Drawing.Point(449, 21);
             this.txtTicket.Name = "txtTicket";
             this.txtTicket.ReadOnly = true;
-            this.txtTicket.Size = new System.Drawing.Size(49, 20);
+            this.txtTicket.Size = new System.Drawing.Size(38, 20);
             this.txtTicket.TabIndex = 14;
             // 
             // lbTicketNumero
             // 
             this.lbTicketNumero.AutoSize = true;
-            this.lbTicketNumero.Location = new System.Drawing.Point(369, 242);
+            this.lbTicketNumero.Location = new System.Drawing.Point(422, 5);
             this.lbTicketNumero.Name = "lbTicketNumero";
             this.lbTicketNumero.Size = new System.Drawing.Size(74, 13);
             this.lbTicketNumero.TabIndex = 15;
             this.lbTicketNumero.Text = "TicketNumero";
             // 
+            // cmbMedioPago
+            // 
+            this.cmbMedioPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMedioPago.FormattingEnabled = true;
+            this.cmbMedioPago.Location = new System.Drawing.Point(346, 301);
+            this.cmbMedioPago.Name = "cmbMedioPago";
+            this.cmbMedioPago.Size = new System.Drawing.Size(97, 21);
+            this.cmbMedioPago.TabIndex = 16;
+            // 
+            // lbMedioPago
+            // 
+            this.lbMedioPago.AutoSize = true;
+            this.lbMedioPago.Location = new System.Drawing.Point(261, 304);
+            this.lbMedioPago.Name = "lbMedioPago";
+            this.lbMedioPago.Size = new System.Drawing.Size(79, 13);
+            this.lbMedioPago.TabIndex = 17;
+            this.lbMedioPago.Text = "Medio de Pago";
+            // 
             // VentaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 370);
+            this.ClientSize = new System.Drawing.Size(497, 380);
+            this.Controls.Add(this.lbMedioPago);
+            this.Controls.Add(this.cmbMedioPago);
             this.Controls.Add(this.lbTicketNumero);
             this.Controls.Add(this.txtTicket);
             this.Controls.Add(this.btnAgregar);
@@ -201,5 +223,7 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtTicket;
         private System.Windows.Forms.Label lbTicketNumero;
+        private System.Windows.Forms.ComboBox cmbMedioPago;
+        private System.Windows.Forms.Label lbMedioPago;
     }
 }

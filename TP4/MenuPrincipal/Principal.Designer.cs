@@ -108,9 +108,11 @@
             this.dtgStocks.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgStocks.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtgStocks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgStocks.EnableHeadersVisualStyles = false;
             this.dtgStocks.Location = new System.Drawing.Point(421, 32);
             this.dtgStocks.Name = "dtgStocks";
             this.dtgStocks.ReadOnly = true;
+            this.dtgStocks.RowHeadersVisible = false;
             this.dtgStocks.Size = new System.Drawing.Size(316, 342);
             this.dtgStocks.TabIndex = 5;
             // 

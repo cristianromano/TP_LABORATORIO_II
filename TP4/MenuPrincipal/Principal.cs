@@ -17,6 +17,7 @@ namespace MenuPrincipal
     {
         AgregarProducto agregarForm = new AgregarProducto();
         Thread hilo;
+        List<Producto> aux = new List<Producto>();
         public Principal()
         {
             InitializeComponent();
@@ -83,24 +84,26 @@ namespace MenuPrincipal
 
         private void btnStock_Click(object sender, EventArgs e)
         {
+            aux.Clear();
             hilo = new Thread(agregarForm.AgregarRandomProductosStock);
             hilo.Start();
-
-            // RefrescarDataGrid();
         }
 
-        private void apretoEvento(List<Producto> auxProductos)
+        private void apretoEvento(Producto p)
         {
             if (this.InvokeRequired)
             {
                 AgregarProductosRandom del = new AgregarProductosRandom(apretoEvento);
-                this.Invoke(del, new object[] { auxProductos });
+                this.Invoke(del, new object[] { p });
             }
             else
             {
-                dtgStocks.DataSource = auxProductos;
+                aux.Add(p);
+
+                dtgStocks.DataSource = aux;
                 dtgStocks.DataSource = null;
-                dtgStocks.DataSource = auxProductos;
+                dtgStocks.DataSource = aux;
+
                 RefrescarDataGrid();
             }
         }

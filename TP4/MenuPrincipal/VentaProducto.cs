@@ -18,7 +18,7 @@ namespace MenuPrincipal
 
         List<Producto> ListaProductos;
         List<Producto> ListaRandom;
-        List<Producto> ListaAuxProductosCancelados; 
+        List<Producto> ListaAuxProductosCancelados;
         Thread thread;
         Producto MiProducto;
         public float acumulador = 0;
@@ -36,17 +36,14 @@ namespace MenuPrincipal
         {
             ListaProductos = new List<Producto>();
             ListaRandom = new List<Producto>();
-            ListaAuxProductosCancelados = new List<Producto>();
             ListaProductos = Comercio.Productos;
-
-            ListaAuxProductosCancelados = Comercio.LeerXml();
-
             thread = new Thread(AgregarVentaOffline);
             thread.Start();
 
             this.cmbProductos.DataSource = Comercio.Productos;
             this.cmbProductos.DisplayMember = "nombre";
             this.txtTicket.Text = Interlocked.Increment(ref acum).ToString();
+            this.cmbMedioPago.DataSource = Enum.GetValues(typeof(EMedioPago));
 
             ListaProductos.Clear();
         }
@@ -64,7 +61,7 @@ namespace MenuPrincipal
         {
             try
             {
-                 MiProducto = (Producto)this.cmbProductos.SelectedItem;
+                MiProducto = (Producto)this.cmbProductos.SelectedItem;
 
                 if (MiProducto.Stock == 0)
                 {
@@ -87,7 +84,6 @@ namespace MenuPrincipal
 
                     dtgVentaProducto.Columns.Remove("Id");
                     dtgVentaProducto.Columns.Remove("Stock");
-                  //  MiProducto.Modificar();
                 }
             }
             catch (Exception ex)
@@ -110,12 +106,13 @@ namespace MenuPrincipal
                 if (string.IsNullOrWhiteSpace(this.txtMontoFinal.Text) == false)
                 {
                     float monto = float.Parse(this.txtMontoFinal.Text);
-                    Venta miVenta = new Venta(monto, ListaProductos);
+                    Venta miVenta = new Venta(monto, ListaProductos, (EMedioPago)this.cmbMedioPago.SelectedItem);
 
-                    if (Comercio.Ventas + miVenta && Producto.ModificarLista(ListaProductos))                    {                       
-                     
+                    if (Comercio.Ventas + miVenta && Producto.ModificarLista(ListaProductos))
+                    {
+
                         if (Venta.GuardarTexto(miVenta))
-                        {                          
+                        {
                             MessageBox.Show("venta exitosa , ticket generado con exito", "SISTEMA DE VENTA");
                             this.DialogResult = DialogResult.OK;
                         }
@@ -150,15 +147,15 @@ namespace MenuPrincipal
             {
                 productoIndex = item.Next(0, cantidadProductos);
 
-                if(auxProductos[productoIndex].Stock > 0)
+                if (auxProductos[productoIndex].Stock > 0)
                 {
                     ListaRandom.Add(auxProductos[productoIndex]);
                     acumulador += auxProductos[productoIndex].Precio;
 
                     auxProductos[productoIndex].Stock--;
                     auxProductos[productoIndex].Modificar();
-                }       
-          
+                }
+
             }
             Venta ventaOffline = new Venta(acumulador, ListaRandom);
 
@@ -177,8 +174,6 @@ namespace MenuPrincipal
             }
             this.DialogResult = DialogResult.OK;
         }
-
-        
 
     }
 }

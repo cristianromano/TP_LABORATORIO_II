@@ -43,3 +43,14 @@ C:\Users\Cristian\Desktop\TP4\Entidades\obj\Debug\Entidades.csproj.CoreCompileIn
 C:\Users\Cristian\Desktop\TP4\Entidades\obj\Debug\Entidades.csproj.CopyComplete
 C:\Users\Cristian\Desktop\TP4\Entidades\obj\Debug\Entidades.dll
 C:\Users\Cristian\Desktop\TP4\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Cristian\Desktop\UTN\TP4\Entidades\bin\Debug\Entidades.dll
+C:\Users\Cristian\Desktop\UTN\TP4\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Cristian\Desktop\UTN\TP4\Entidades\bin\Debug\Archivos.dll
+C:\Users\Cristian\Desktop\UTN\TP4\Entidades\bin\Debug\Excepciones.dll
+C:\Users\Cristian\Desktop\UTN\TP4\Entidades\bin\Debug\Excepciones.pdb
+C:\Users\Cristian\Desktop\UTN\TP4\Entidades\bin\Debug\Archivos.pdb
+C:\Users\Cristian\Desktop\UTN\TP4\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Cristian\Desktop\UTN\TP4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\Desktop\UTN\TP4\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+C:\Users\Cristian\Desktop\UTN\TP4\Entidades\obj\Debug\Entidades.dll
+C:\Users\Cristian\Desktop\UTN\TP4\Entidades\obj\Debug\Entidades.pdb
