@@ -58,7 +58,7 @@ namespace Archivos
             catch (Exception e)
             {
 
-                throw new ArchivosException("Error al intentar leer archivo xml");
+                throw new ArchivosException("Error al intentar leer archivo xml" , e);
             }
 
             return false;

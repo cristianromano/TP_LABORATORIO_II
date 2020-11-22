@@ -24,6 +24,9 @@ namespace Entidades
 
         }
 
+        /// <summary>
+        /// obtengo de la base de datos la informacions
+        /// </summary>
         public static List<Producto> Productos
         {
             get
@@ -34,6 +37,11 @@ namespace Entidades
         public static List<Venta> Ventas { get => ListaVentas; }
 
 
+        /// <summary>
+        /// guardo en XML una lista de productos
+        /// </summary>
+        /// <param name="productos"></param>
+        /// <returns></returns>
         public static bool GuardarXml(List<Producto> productos)
         {
             string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "productos.xml");
@@ -42,6 +50,10 @@ namespace Entidades
             return dato.Guardar(path, productos);
         }
 
+        /// <summary>
+        /// leeo archivo XML de tipo producto
+        /// </summary>
+        /// <returns></returns>
         public static List<Producto> LeerXml()
         {
             List<Producto> aux = new List<Producto>();

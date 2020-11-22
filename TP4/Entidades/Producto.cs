@@ -81,7 +81,7 @@ namespace Entidades
         }
 
         /// <summary>
-        /// agrega un nuevo producto a la lista
+        /// agrega un nuevo producto a la base de datos
         /// </summary>
         /// <param name="productos"></param>
         /// <param name="producto"></param>
@@ -114,7 +114,7 @@ namespace Entidades
         }
 
         /// <summary>
-        /// elimina un producto de la lista
+        /// elimina un producto de la base de datos
         /// </summary>
         /// <param name="productos"></param>
         /// <param name="producto"></param>
@@ -137,17 +137,30 @@ namespace Entidades
         }
         #endregion
 
+        #region Metodos
 
+        /// <summary>
+        /// guardo en la base de datos el producto
+        /// </summary>
+        /// <returns>producto</returns>
         public bool Guardar()
         {
             return ProductosDAO.InsertaProducto(this);
         }
 
+        /// <summary>
+        /// elimino de la base de datos el producto
+        /// </summary>
+        /// <returns>producto</returns>
         public bool Eliminar()
         {
             return ProductosDAO.EliminarProducto(this);
         }
 
+        /// <summary>
+        /// modifico en la base de datos el producto
+        /// </summary>
+        /// <returns>producto</returns>
         public bool Modificar()
         {
             return ProductosDAO.ModificarProducto(this);
@@ -171,6 +184,11 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// agrego una lista de productos a la base de datos
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns>lista productos</returns>
         public static bool AgregarLista(List<Producto> p)
         {
             bool retorno = false;
@@ -184,6 +202,10 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// override del metodo toString
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -196,6 +218,8 @@ namespace Entidades
 
             return sb.ToString();
         }
+
+        #endregion
 
     }
 

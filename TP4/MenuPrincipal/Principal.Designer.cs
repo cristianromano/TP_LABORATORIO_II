@@ -30,7 +30,6 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnSerializar = new System.Windows.Forms.Button();
             this.btnVenta = new System.Windows.Forms.Button();
             this.btnStock = new System.Windows.Forms.Button();
             this.dtgStocks = new System.Windows.Forms.DataGridView();
@@ -67,16 +66,6 @@
             this.btnAgregar.Text = "Agregar Producto";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // btnSerializar
-            // 
-            this.btnSerializar.Location = new System.Drawing.Point(113, 418);
-            this.btnSerializar.Name = "btnSerializar";
-            this.btnSerializar.Size = new System.Drawing.Size(140, 23);
-            this.btnSerializar.TabIndex = 2;
-            this.btnSerializar.Text = "Serializar Productos";
-            this.btnSerializar.UseVisualStyleBackColor = true;
-            this.btnSerializar.Click += new System.EventHandler(this.btnSerializar_Click);
             // 
             // btnVenta
             // 
@@ -146,14 +135,13 @@
             this.Controls.Add(this.dtgStocks);
             this.Controls.Add(this.btnStock);
             this.Controls.Add(this.btnVenta);
-            this.Controls.Add(this.btnSerializar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Principal";
-            this.Text = "Form1";
+            this.Text = "COMERCIO ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -167,7 +155,6 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnSerializar;
         private System.Windows.Forms.Button btnVenta;
         private System.Windows.Forms.Button btnStock;
         private System.Windows.Forms.DataGridView dtgStocks;

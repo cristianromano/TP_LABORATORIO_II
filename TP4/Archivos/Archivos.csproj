@@ -47,10 +47,6 @@
     <Compile Include="Xml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClaseAbstracta\ClaseAbstracta.csproj">
-      <Project>{88f24145-3803-4fe5-8c9e-1ac621e95fc8}</Project>
-      <Name>ClaseAbstracta</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Excepciones\Excepciones.csproj">
       <Project>{70f510a6-ac9a-4d07-97a8-e68ab8758447}</Project>
       <Name>Excepciones</Name>

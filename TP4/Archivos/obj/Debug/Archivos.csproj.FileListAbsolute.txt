@@ -29,3 +29,12 @@ C:\Users\Cristian\Desktop\TP4\Archivos\bin\Debug\Archivos.pdb
 C:\Users\Cristian\Desktop\TP4\Archivos\bin\Debug\Excepciones.dll
 C:\Users\Cristian\Desktop\TP4\Archivos\bin\Debug\Excepciones.pdb
 C:\Users\Cristian\Desktop\TP4\Archivos\obj\Debug\Archivos.csproj.CopyComplete
+C:\Users\Cristian\Desktop\UTN\TP4\Archivos\bin\Debug\Archivos.dll
+C:\Users\Cristian\Desktop\UTN\TP4\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Cristian\Desktop\UTN\TP4\Archivos\bin\Debug\Excepciones.dll
+C:\Users\Cristian\Desktop\UTN\TP4\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\Cristian\Desktop\UTN\TP4\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Cristian\Desktop\UTN\TP4\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\Desktop\UTN\TP4\Archivos\obj\Debug\Archivos.csproj.CopyComplete
+C:\Users\Cristian\Desktop\UTN\TP4\Archivos\obj\Debug\Archivos.dll
+C:\Users\Cristian\Desktop\UTN\TP4\Archivos\obj\Debug\Archivos.pdb

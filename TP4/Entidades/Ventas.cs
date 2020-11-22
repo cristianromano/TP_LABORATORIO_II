@@ -22,6 +22,7 @@ namespace Entidades
         List<Producto> productos;
         EMedioPago pago;
 
+        #region Constructores
         public Venta(float monto , List<Producto> productos)
         {
             this.Monto = monto;
@@ -34,13 +35,17 @@ namespace Entidades
         {
             this.Pago = pago;
         }
+        #endregion
 
-        
+        #region Propiedades
+
         public List<Producto> Productos { get => productos; set => productos = value; }
         public float Monto { get => monto; set => monto = value; }
         public int Ticket { get => TicketVentaNumero; set => TicketVentaNumero = value; }
         private EMedioPago Pago { get => pago; set => pago = value; }
+        #endregion
 
+        #region Operadores
         /// <summary>
         /// agrega una nueva venta a la lista
         /// </summary>
@@ -53,6 +58,14 @@ namespace Entidades
             return true;
         }
 
+        #endregion
+
+        #region Metodos
+        /// <summary>
+        /// guardo la venta que realizo de manera manual
+        /// </summary>
+        /// <param name="venta"></param>
+        /// <returns></returns>
         public static bool GuardarTexto(Venta venta)
         {
             string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "TICKET VENTA");
@@ -60,6 +73,11 @@ namespace Entidades
             return txt.Guardar(path, venta.ToString());
         }
 
+        /// <summary>
+        /// guarda la venta que se realiza de manera online con hilos
+        /// </summary>
+        /// <param name="venta"></param>
+        /// <returns></returns>
         public static bool GuardarTextoOnline(Venta venta)
         {
             string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "TICKET VENTA ONLINE");
@@ -67,6 +85,11 @@ namespace Entidades
             return txt.Guardar(path, venta.ToString());
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="venta"></param>
+        /// <returns></returns>
         public static bool GuardarTextoStock(Venta venta)
         {
             string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "TICKET VENTA STOCK");
@@ -74,6 +97,10 @@ namespace Entidades
             return txt.Guardar(path, venta.ToString());
         }
 
+        /// <summary>
+        /// override del metodo toString
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -99,7 +126,7 @@ namespace Entidades
             return sb.ToString();
         }
 
-
+        #endregion
 
     }
 

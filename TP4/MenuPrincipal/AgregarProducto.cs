@@ -17,8 +17,9 @@ namespace MenuPrincipal
     public partial class AgregarProducto : Form
     {
         public event AgregarProductosRandom Agregar;
-
         Producto producto;
+        static Queue<Producto> ListaRandom = new Queue<Producto>();
+        static float acumulador = 0;
         public AgregarProducto()
         {
             InitializeComponent();
@@ -32,23 +33,24 @@ namespace MenuPrincipal
             this.btnEliminar.Enabled = false;
         }
 
+        /// <summary>
+        /// agrego un producto a la lista estatica comercio
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             try
             {
                 float precio = float.Parse(this.txtPrecio.Text);
                 int stock = int.Parse(this.txtStock.Text);
-              //  int id = int.Parse(this.txtID.Text);
 
                 if (string.IsNullOrWhiteSpace(this.txtNombre.Text) == false && string.IsNullOrWhiteSpace(this.txtCodigo.Text) == false)
                 {
-
                     producto = new Producto(this.txtNombre.Text, precio, stock, this.txtCodigo.Text);
-
                     if (Comercio.Productos + producto)
                     {
                         MessageBox.Show("agregado a la base de datos");
-
                     }
 
                     this.DialogResult = DialogResult.OK;
@@ -56,7 +58,7 @@ namespace MenuPrincipal
 
                 else
                 {
-                    throw new ExcepcionesGenericas("faltan datos");
+                    throw new ProductosException("faltan datos");
                 }
             }
             catch (ExcepcionesGenericas ex)
@@ -68,10 +70,13 @@ namespace MenuPrincipal
             {
                 MessageBox.Show(ex.Message);
             }
-
-
         }
 
+        /// <summary>
+        /// elimino un producto seleccionado de la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             try
@@ -97,14 +102,13 @@ namespace MenuPrincipal
 
                 else
                 {
-                    throw new ExcepcionesGenericas("faltan datos");
+                    throw new ProductosException("faltan datos");
                 }
             }
             catch (ExcepcionesGenericas ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
 
         private void dtgProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -127,7 +131,7 @@ namespace MenuPrincipal
             dtgProductos.DataSource = Comercio.Productos;
             dtgProductos.DataSource = null;
             dtgProductos.DataSource = Comercio.Productos;
-            
+
             dtgProductos.ColumnHeadersDefaultCellStyle.BackColor = Color.Bisque;
 
             foreach (DataGridViewRow item in dtgProductos.Rows)
@@ -139,19 +143,20 @@ namespace MenuPrincipal
             }
         }
 
-
+        /// <summary>
+        /// agrego a travez de un hilo stock a los productos de manera aleatoria
+        /// </summary>
         public void AgregarRandomProductosStock()
         {
-            if(!(Agregar is null))
+            if (!(Agregar is null))
             {
                 int cantidadProductos = 0;
                 Random random = new Random();
                 Random item = new Random();
                 Random randomStock = new Random();
-                float acumulador = 0;
                 int productoIndex = 0;
                 List<Producto> auxProductos = new List<Producto>();
-                Queue<Producto> ListaRandom = new Queue<Producto>();
+                
 
                 auxProductos = Comercio.Productos;
                 cantidadProductos = auxProductos.Count;
@@ -173,14 +178,14 @@ namespace MenuPrincipal
                     Agregar.Invoke(ListaRandom.Dequeue());
                 }
             }
-         
-            //Venta reposicionStock = new Venta(acumulador, ListaRandom);
 
-            //if (Venta.GuardarTextoStock(reposicionStock))
-            //{
-            //    Thread.Sleep(7000);
-            //    MessageBox.Show("stock repuesto con exito , ticket de precio a pagar generado", "SISTEMA DE VENTA ONLINE");
-            //}
+            Venta reposicionStock = new Venta(acumulador, Principal.Aux);
+
+            if (Venta.GuardarTextoStock(reposicionStock))
+            {
+                Thread.Sleep(2000);
+                MessageBox.Show("stock repuesto con exito , ticket de precio a pagar generado", "SISTEMA DE VENTA ONLINE");
+            }
 
         }
 

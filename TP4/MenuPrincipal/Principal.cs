@@ -17,7 +17,10 @@ namespace MenuPrincipal
     {
         AgregarProducto agregarForm = new AgregarProducto();
         Thread hilo;
-        List<Producto> aux = new List<Producto>();
+        static List<Producto> aux = new List<Producto>();
+        
+        public static List<Producto> Aux { get => aux; set => aux = value; }
+
         public Principal()
         {
             InitializeComponent();
@@ -57,21 +60,6 @@ namespace MenuPrincipal
             }
         }
 
-        private void btnSerializar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (Comercio.GuardarXml(Comercio.Productos))
-                {
-                    MessageBox.Show("serializado correctamente");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void btnVenta_Click(object sender, EventArgs e)
         {
             VentaProducto venta = new VentaProducto();
@@ -82,6 +70,11 @@ namespace MenuPrincipal
             }
         }
 
+        /// <summary>
+        /// inicio el hilo para realizar el stockeo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnStock_Click(object sender, EventArgs e)
         {
             aux.Clear();
@@ -89,7 +82,11 @@ namespace MenuPrincipal
             hilo.Start();
         }
 
-        private void apretoEvento(Producto p)
+        /// <summary>
+        /// creo evento para poder ir mostrando de a uno los productos que estan siendo stockeados y su cantidad
+        /// </summary>
+        /// <param name="p"></param>
+        public void apretoEvento(Producto p)
         {
             if (this.InvokeRequired)
             {
@@ -99,7 +96,6 @@ namespace MenuPrincipal
             else
             {
                 aux.Add(p);
-
                 dtgStocks.DataSource = aux;
                 dtgStocks.DataSource = null;
                 dtgStocks.DataSource = aux;
@@ -114,6 +110,7 @@ namespace MenuPrincipal
             {
                 hilo.Abort();
             }
+            Comercio.GuardarXml(Comercio.Productos);
             this.DialogResult = DialogResult.OK;
         }
     }

@@ -18,7 +18,6 @@ namespace MenuPrincipal
 
         List<Producto> ListaProductos;
         List<Producto> ListaRandom;
-        List<Producto> ListaAuxProductosCancelados;
         Thread thread;
         Producto MiProducto;
         public float acumulador = 0;
@@ -57,6 +56,11 @@ namespace MenuPrincipal
             this.txtPrecio.Text = MiProducto.Precio.ToString();
         }
 
+        /// <summary>
+        /// agrego una nueva venta a la lista ListaProductos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             try
@@ -65,7 +69,7 @@ namespace MenuPrincipal
 
                 if (MiProducto.Stock == 0)
                 {
-                    throw new ExcepcionesGenericas("no hay stock");
+                    throw new VentasException("no hay stock");
                 }
                 else
                 {
@@ -99,6 +103,11 @@ namespace MenuPrincipal
             this.dtgVentaProducto.DataSource = ListaProductos;
         }
 
+        /// <summary>
+        /// genero una venta
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             try
@@ -121,7 +130,7 @@ namespace MenuPrincipal
 
                 else
                 {
-                    throw new ExcepcionesGenericas("falta completar la venta");
+                    throw new VentasException("falta completar la venta");
                 }
             }
             catch (Exception ex)
@@ -130,6 +139,9 @@ namespace MenuPrincipal
             }
         }
 
+        /// <summary>
+        /// mientras voy realizando una venta , el sistema me informa que de manera ONLINE genera ya una venta y me la guarda en un texto
+        /// </summary>
         public void AgregarVentaOffline()
         {
             int cantidadProductos = 0;
