@@ -94,7 +94,7 @@ namespace Entidades
         {
             string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "TICKET VENTA STOCK");
             Texto txt = new Texto();
-            return txt.Guardar(path, venta.ToString());
+            return txt.Guardar(path, venta.StockeoString());
         }
 
         /// <summary>
@@ -119,7 +119,7 @@ namespace Entidades
                 sb.AppendLine($"------------------------------");
             }
 
-            sb.AppendLine($"Precio Final: {Monto}");
+            sb.AppendLine($"Precio Final: ${Monto}");
             sb.AppendLine($"------------------------------");
             sb.AppendLine($"GRACIAS POR TU COMPRA - TICKET N*{Ticket}");
 
@@ -127,7 +127,6 @@ namespace Entidades
         }
 
         #endregion
-
     }
 
 }

@@ -39,5 +39,31 @@ namespace Entidades
             return contador;
         }
 
+        public static string StockeoString(this Venta v)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine($"------------------------------");
+            sb.AppendLine("------TICKET DE STOCKEO---------");
+            sb.AppendLine($"------------------------------");
+            sb.AppendLine($"Hora: {DateTime.Now.ToString("G")}");
+            sb.AppendLine($"------------------------------");
+            sb.AppendLine($"Productos STOCKEADOS x listado ");
+            sb.AppendLine($"------------------------------");
+
+            foreach (Producto item in v.Productos)
+            {
+                sb.AppendLine($"Item: {item.Nombre} x Precio: {item.Precio} [CANTIDAD: {item.Stock}]");
+                sb.AppendLine($"------------------------------");
+            }
+
+            sb.AppendLine($"Precio Final: ${v.Monto}");
+            sb.AppendLine($"------------------------------");
+            sb.AppendLine($"GRACIAS POR TU COMPRA - TICKET N*{v.Ticket}");
+
+            return sb.ToString();
+        }
+
+
     }
 }

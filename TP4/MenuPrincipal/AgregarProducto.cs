@@ -19,7 +19,6 @@ namespace MenuPrincipal
         public event AgregarProductosRandom Agregar;
         Producto producto;
         static Queue<Producto> ListaRandom = new Queue<Producto>();
-        static float acumulador = 0;
         public AgregarProducto()
         {
             InitializeComponent();
@@ -148,6 +147,7 @@ namespace MenuPrincipal
         /// </summary>
         public void AgregarRandomProductosStock()
         {
+            float acumulador = 0;
             if (!(Agregar is null))
             {
                 int cantidadProductos = 0;
@@ -170,7 +170,7 @@ namespace MenuPrincipal
 
                     if (Comercio.Productos + auxProductos[productoIndex])
                     {
-                        acumulador += auxProductos[productoIndex].Precio;
+                        acumulador += (auxProductos[productoIndex].Precio * auxProductos[productoIndex].Stock);
                         ListaRandom.Enqueue(auxProductos[productoIndex]);
                     }
 
