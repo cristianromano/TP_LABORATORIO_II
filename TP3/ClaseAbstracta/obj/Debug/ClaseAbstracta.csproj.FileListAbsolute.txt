@@ -1,9 +1,0 @@
-C:\Users\Cristian\source\repos\ClaseAbstracta\ClaseAbstracta\bin\Debug\ClaseAbstracta.dll
-C:\Users\Cristian\source\repos\ClaseAbstracta\ClaseAbstracta\bin\Debug\ClaseAbstracta.pdb
-C:\Users\Cristian\source\repos\ClaseAbstracta\ClaseAbstracta\bin\Debug\Excepciones.dll
-C:\Users\Cristian\source\repos\ClaseAbstracta\ClaseAbstracta\bin\Debug\Excepciones.pdb
-C:\Users\Cristian\source\repos\ClaseAbstracta\ClaseAbstracta\obj\Debug\ClaseAbstracta.csprojAssemblyReference.cache
-C:\Users\Cristian\source\repos\ClaseAbstracta\ClaseAbstracta\obj\Debug\ClaseAbstracta.csproj.CoreCompileInputs.cache
-C:\Users\Cristian\source\repos\ClaseAbstracta\ClaseAbstracta\obj\Debug\ClaseAbstracta.csproj.CopyComplete
-C:\Users\Cristian\source\repos\ClaseAbstracta\ClaseAbstracta\obj\Debug\ClaseAbstracta.dll
-C:\Users\Cristian\source\repos\ClaseAbstracta\ClaseAbstracta\obj\Debug\ClaseAbstracta.pdb

@@ -89,7 +89,7 @@ namespace MenuPrincipal
 
                     if (Comercio.Productos - producto)
                     {
-                        MessageBox.Show("producto eliminado de la base de datos");
+                        MessageBox.Show("producto eliminado de la base de datos");                        
                         this.DialogResult = DialogResult.OK;
                     }
 
