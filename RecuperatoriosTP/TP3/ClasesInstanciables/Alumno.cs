@@ -70,6 +70,10 @@ namespace ClasesInstanciables
 
         #region Metodos
 
+        /// <summary>
+        /// realiza un override y suma datos a mostrar al objeto alumno.
+        /// </summary>
+        /// <returns></returns>
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -86,6 +90,10 @@ namespace ClasesInstanciables
             return $"TOMA CLASE DE: {this.claseQueToma}";
         }
 
+        /// <summary>
+        /// a travez de este metodo se muestran los datos.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return MostrarDatos();

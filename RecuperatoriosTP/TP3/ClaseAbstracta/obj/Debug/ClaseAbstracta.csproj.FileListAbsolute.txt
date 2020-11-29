@@ -16,3 +16,12 @@ C:\Users\Cristian\Desktop\UTN\TP3\ClaseAbstracta\obj\Debug\ClaseAbstracta.csproj
 C:\Users\Cristian\Desktop\UTN\TP3\ClaseAbstracta\obj\Debug\ClaseAbstracta.csproj.CopyComplete
 C:\Users\Cristian\Desktop\UTN\TP3\ClaseAbstracta\obj\Debug\ClaseAbstracta.dll
 C:\Users\Cristian\Desktop\UTN\TP3\ClaseAbstracta\obj\Debug\ClaseAbstracta.pdb
+C:\Users\Cristian\Desktop\UTN\RecuperatoriosTP\TP3\ClaseAbstracta\bin\Debug\ClaseAbstracta.dll
+C:\Users\Cristian\Desktop\UTN\RecuperatoriosTP\TP3\ClaseAbstracta\bin\Debug\ClaseAbstracta.pdb
+C:\Users\Cristian\Desktop\UTN\RecuperatoriosTP\TP3\ClaseAbstracta\bin\Debug\Excepciones.dll
+C:\Users\Cristian\Desktop\UTN\RecuperatoriosTP\TP3\ClaseAbstracta\bin\Debug\Excepciones.pdb
+C:\Users\Cristian\Desktop\UTN\RecuperatoriosTP\TP3\ClaseAbstracta\obj\Debug\ClaseAbstracta.csprojAssemblyReference.cache
+C:\Users\Cristian\Desktop\UTN\RecuperatoriosTP\TP3\ClaseAbstracta\obj\Debug\ClaseAbstracta.csproj.CoreCompileInputs.cache
+C:\Users\Cristian\Desktop\UTN\RecuperatoriosTP\TP3\ClaseAbstracta\obj\Debug\ClaseAbstracta.csproj.CopyComplete
+C:\Users\Cristian\Desktop\UTN\RecuperatoriosTP\TP3\ClaseAbstracta\obj\Debug\ClaseAbstracta.dll
+C:\Users\Cristian\Desktop\UTN\RecuperatoriosTP\TP3\ClaseAbstracta\obj\Debug\ClaseAbstracta.pdb

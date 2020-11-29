@@ -73,7 +73,7 @@ namespace ClasesInstanciables
         #region Operadores
 
         /// <summary>
-        /// Verifica si un alumno participa en la clase de una jornada.
+        /// verifica si un alumno participa en la clase de una jornada.
         /// </summary>
         /// <param name="j"></param>
         /// <param name="a"></param>
@@ -92,7 +92,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Verifica si un alumno no participa en la clase de una jornada.
+        /// verifica si un alumno no participa en la clase de una jornada.
         /// </summary>
         /// <param name="j"></param>
         /// <param name="a"></param>
@@ -150,7 +150,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Le da formato a los datos de una jornada.
+        /// muestra los datos de una jornada.
         /// </summary>
         /// <returns></returns>
         public override string ToString()

@@ -84,7 +84,7 @@ namespace ClasesInstanciables
         #region Operadores
 
         /// <summary>
-        ///  Verifica si un alumno esta inscripto en una universidad.
+        ///  verifica si un alumno esta inscripto en una universidad.
         /// </summary>
         /// <param name="g"></param>
         /// <param name="a"></param>
@@ -103,7 +103,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Verifica si un alumno no esta inscripto en una universidad.
+        /// verifica si un alumno no esta inscripto en una universidad.
         /// </summary>
         /// <param name="g"></param>
         /// <param name="a"></param>
@@ -114,7 +114,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Verifica si un profesor esta dando clases en una universidad.
+        /// verifica si un profesor esta dando clases en una universidad.
         /// </summary>
         /// <param name="g"></param>
         /// <param name="i"></param>
@@ -133,7 +133,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Verifica si un profesor no esta dando clases en una universidad.
+        /// verifica si un profesor no esta dando clases en una universidad.
         /// </summary>
         /// <param name="g"></param>
         /// <param name="i"></param>
@@ -144,7 +144,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Busca al primer profesor de la universidad capaz de dar la clase pasada como parametro.
+        /// busca al primer profesor de la universidad capaz de dar la clase pasada como parametro.
         /// </summary>
         /// <param name="u"></param>
         /// <param name="clase"></param>
@@ -174,7 +174,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Busca al primer profesor de la universidad que no pueda dar la clase pasada como parametro.
+        /// busca al primer profesor de la universidad que no pueda dar la clase pasada como parametro.
         /// </summary>
         /// <param name="u"></param>
         /// <param name="clase"></param>
@@ -198,7 +198,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        ///  Agrega un alumno a la universidad.
+        ///  agrega un alumno a la universidad.
         /// </summary>
         /// <param name="u"></param>
         /// <param name="a"></param>
@@ -219,7 +219,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Agrega un profesor a la universidad.
+        /// agrega un profesor a la universidad.
         /// </summary>
         /// <param name="u"></param>
         /// <param name="i"></param>
@@ -236,7 +236,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Agrega a la universidad una nueva jornada con la clase pasada como parametro, un profesor que pueda dar dicha clase y la lista de alumnos que la toman.
+        /// agrega a la universidad una nueva jornada con la clase pasada como parametro, un profesor que pueda dar dicha clase y la lista de alumnos que la toman.
         /// </summary>
         /// <param name="g"></param>
         /// <param name="clase"></param>
@@ -263,7 +263,7 @@ namespace ClasesInstanciables
         #region Metodos
 
         /// <summary>
-        /// Serializa los datos de una universidad en un archivo .xml
+        /// serializa los datos de una universidad en un archivo .xml
         /// </summary>
         /// <param name="uni"></param>
         /// <returns></returns>
@@ -276,7 +276,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Deserializa los datos de una universidad de un archivo .xml
+        /// deserializa los datos de una universidad de un archivo .xml
         /// </summary>
         /// <returns></returns>
         public static Universidad Leer()
@@ -292,7 +292,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Le da formato a los datos de una universida.
+        /// le da formato a los datos de una universida.
         /// </summary>
         /// <param name="uni"></param>
         /// <returns></returns>
@@ -309,7 +309,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Devuelve los datos de una universidad.
+        /// devuelve los datos de una universidad.
         /// </summary>
         /// <returns></returns>
         public override string ToString()

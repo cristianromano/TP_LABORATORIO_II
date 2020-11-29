@@ -36,7 +36,7 @@ namespace ClasesInstanciables
         #region Metodos
 
         /// <summary>
-        /// Le da formato a los datos de un profesor.
+        /// funcion para darle formato a los datos de un profesor.
         /// </summary>
         /// <returns></returns>
         protected override string MostrarDatos()
@@ -51,7 +51,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Le da formato a las clases que da en el dia un profesor.
+        /// le da formato a las clases que da en el dia un profesor.
         /// </summary>
         /// <returns></returns>
         protected override string ParticiparEnClase()
@@ -76,7 +76,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Genera dos clases de manera random para un profesor.
+        /// genera dos clases de manera random para un profesor.
         /// </summary>
         public void _randomClase()
         {
@@ -106,7 +106,7 @@ namespace ClasesInstanciables
         #region Operadores
 
         /// <summary>
-        /// Verifica si un profesor da una clase.
+        /// verifica si un profesor da una clase.
         /// </summary>
         /// <param name="i"></param>
         /// <param name="clase"></param>
@@ -126,7 +126,7 @@ namespace ClasesInstanciables
         }
 
         /// <summary>
-        /// Verifica si un profesor no da una clase.
+        /// verifica si un profesor no da una clase.
         /// </summary>
         /// <param name="i"></param>
         /// <param name="clase"></param>
