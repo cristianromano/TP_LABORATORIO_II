@@ -163,7 +163,6 @@ namespace ClasesInstanciables
             {
                 sb.AppendLine(item.ToString());
             }
-
             return sb.ToString();
         }
 

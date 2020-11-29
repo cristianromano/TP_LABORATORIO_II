@@ -56,26 +56,11 @@ namespace ClasesInstanciables
         {
             get
             {
-                if (i >= 0 && i < this.jornada.Count)
-                {
-                    return this.jornada[i];
-                }
-                else
-                {
-                    throw new ArchivosException("Indice invalido");
-                }
+                return this.jornada[i];
             }
-
             set
             {
-                if (i >= 0 && i < this.jornada.Count)
-                {
-                    this.jornada[i] = value;
-                }
-                else
-                {
-                    throw new ArchivosException("Indice invalido");
-                }
+                this.jornada[i] = value;
             }
         }
 
